@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Richard Sugianto Laiman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+        <link rel="stylesheet" href="splide/dist/css/themes/splide-skyblue.min.css">       
+        <link rel="shortcut icon" href="title.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <script src="splide/dist/js/splide.min.js"></script>
+    </head>
+
+    <body>
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+        <header>
+            <img class="logo"src="logo.png" alt="logo">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="portofolio.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">Portofolio</a></li>
+                    <li><a href="sol.html" target="_blank" class="nav-sol">SolGallery</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact.html">Contact</a>
+            <p class="menu bars"><i class="fas fa-bars"></i></p>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="portofolio.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">Portofolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="sol.html" target="_blank">SolGallery</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+    
+    <section class="p-section">
+        <div class="port">
+            <h2>PORTOFOLIO</h2>
+        </div>
+
+        <section class="splide-container">
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <li class="splide__slide">
+                            <div class="boxes">
+                                <h2>Website</h2>
+                                <img src="Website.png" alt="">
+                                <p>The preview that you currently see is my old portofolio website. I created it as part of a project. It was the first "proper" website that I managed to create successfully. It is very bare-bones and lacking features but at least it works properly.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="boxes">
+                                <h2>Microblogs</h2>
+                                <img src="Microblog.png" alt="">
+                                <p>These microblogs are also part of a project of mine. Back then I didn't know how to use Photoshop just yet, so I made these in a very unorthodox way, by using Microsoft PowerPoint.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="boxes">
+                                <h2>Console Based Apps</h2>
+                                <img src="Code.png" alt="">
+                                <p>These are some programs that were picked from my projects. Most of them are pretty basic but they function properly, they are created on C and Java programming languages.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="boxes">
+                                <h2>Articles</h2>
+                                <img src="Content.png" alt="">
+                                <p>Reading articles on the internet is one of my hobbies so it is only natural that when I tried to write articles, I started to like doing it.</p>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener( 'DOMContentLoaded', function() {
+                var splide = new Splide( '.splide', {
+                    type:'loop',
+                });
+                splide.mount();
+                } );
+            </script>
+        </section>
+
+        <div class="btn-cont">
+            <a href="https://binusianorg-my.sharepoint.com/personal/richard_laiman_binus_ac_id/_layouts/15/guestaccess.aspx?folderid=0acf4ee7809a742da9361cd0b42f1e635&authkey=AdT4xDfLBOZzK_Anbbt76IE&e=Bodbrx" target="_blank" class="p-below">View source files here!</a>
+        </div>
+        
+        <div class="s-container">
+            <h1>SolGallery</h1>
+            <img src="Sol.png" class="sol">
+            <p>SolGallery is an image slideshow showing the major planetary bodies of our Solar System. It is made as some sort of an "Extra" part of this project.</p>
+            <a href="sol.html" target="blank" class="p-below2">Check it out here!</a>
+            <div class="extra-padding"></div>
+        </div>
+
+        <div class="padding"></div>
+
+    </section>
+   
+    <footer>
+        <div class="footer-img">
+            <a href="https://www.linkedin.com/in/richard-sugianto-341ab821b/" target="_blank"><img src="linkedin.png" alt="linkedin"></a></li>
+            <a href="https://www.instagram.com/erikrez08/?hl=en" target="_blank"><img src="instagram.png" alt="instagram"></a></li>
+            <a href="https://www.facebook.com/richard.erik2004/" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
+        </div>
+        <p class="footer-text">&copy Copyright 2022 @Richard Sugianto Laiman all rights reserved.</p>
+    </footer>
+
+    <body>
+<html>

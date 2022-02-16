@@ -1,0 +1,131 @@
+*, *::before, *::after{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #252525;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+
+/* Track */
+    ::-webkit-scrollbar-track {  
+    background: #999999; 
+  }
+ 
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 3.5px; 
+  }
+
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d3d3d3;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(backgroundLight.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.toggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.toggle img{
+    width: 64px;
+    height: auto;
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.calculator-grid > button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output {
+    border-bottom: 3px solid #669DB3FF;
+    grid-column: 1 / -1;
+    background-color: rgba(196, 196, 196, .9);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .prev{
+    color: rgba(48, 48, 48, .75);
+    font-size: 1.5rem;
+}
+
+.output .curr{
+    color: #252525;
+    font-size: 2.5rem;
+}
+
+footer{
+    background: rgba(255, 255, 255, .8);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+footer em{
+    color: #669DB3FF;
+    font-style: normal;
+    font-weight: 700;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    font-family: Montserrat;
+}
+
+@media only screen and (max-width: 500px) {
+    .calculator-grid{
+        grid-template-columns: repeat(4, 75px);
+        grid-template-rows: minmax(90px, auto)repeat(5, 75px);
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+

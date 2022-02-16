@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Richard Sugianto Laiman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="background.css">
+        <link rel="shortcut icon" href="title.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+        <link rel="stylesheet" href="splide/dist/css/themes/splide-skyblue.min.css">
+        <script src="jquery.js"></script>
+        <script src="splide/dist/js/splide.min.js"></script>
+    </head>
+    <body id="noScroll">
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+        <header>
+            <img class="logo"src="logo.png" alt="logo">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">About Me</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="sol.html" target="_blank" class="nav-sol">SolGallery</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact.html">Contact</a>
+            <p class="menu bars"><i class="fas fa-bars"></i></p>
+        </header>
+        
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">About Me</a>
+                <a href="portofolio.html">Portofolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="sol.html" target="_blank">SolGallery</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+
+        <section class="AboutMe" id="blur">
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h2>About Me</h2>
+                        <p>Hi! Nice to meet you, my name is Richard Sugianto Laiman. I'm currently a freshman majoring in computer science, and I'd like to become a web developer someday. That's why I'm always trying to hone my skills.</p>
+                        <button onclick="popup()">Learn more</button>
+                    </div>
+                    <img src="Foto.png" alt="">
+                </div>
+            </div>           
+        </section>
+
+        <div id="popup2">
+            <h2>Peronsal Information</h2>
+            <img src="pp.jpg" alt="">
+            <div class="text-box">
+                <p>Name: Richard Sugianto Laiman</p>
+                <p>Date of Birth: April 8th, 2004</p>
+                <p>Birthplace: Kota Tangerang</p>
+                <p>Address: Jl. Maulana Yusuf no. 33, Babakan, 15118</p>
+                <p>Email: erikalvarezt08@gmail.com</p>
+                <p>Phone: +6287887152685</p>
+            </div>
+            <button onclick="popup()" id="btn-up"><i class="fas fa-times"></i></button>
+        </div>
+        <script>
+            function popup() {
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var blur = document.getElementById('noScroll');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup2');
+                popup.classList.toggle('active');
+                var x = document.getElementById("popup2");
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <div class="Edu">
+            <h2>Educational History</h2>
+        </div>
+        
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>School</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2007</td>
+                    <td>TK Setia Bhakti</td>
+                    <td>I entered Kindergarten at the age of 3.</td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td>SD Bonavita</td>
+                    <td>I enrolled into Elementary School this year, my academic performance was alright.</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>SMP Bonavita</td>
+                    <td>This is the year I went into middle school. During the first semester, my grades were bad because I was unable to adapt. But in the end, I was able to improve my grades.</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>SMA Setia Bhakti</td>
+                    <td>This was the time when I started to think about my future. I joined the student council and many extracurricular activities.</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>BINUS University</td>
+                    <td>I enrolled to University with the hope of becoming a professional in the IT industry. I learned many things during the 1st Semester of College and I'm excited to learn many more things down the road.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="Skills">
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="Skills1">
+            <h2>Programming Languages</h2>
+        </div>
+
+        <section class="slider-container">
+            <section class="section">
+                <div class="slider">
+                    <div class="slide">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <div class="st first">
+                            <img src="1.png" alt="">
+                        </div>
+                        <div class="st">
+                            <img src="2.png" alt="">
+                        </div>
+                        <div class="st">
+                            <img src="3.png" alt="">
+                        </div>
+    
+                        <div class="nav-auto">
+                            <div class="a-b1"></div>
+                            <div class="a-b2"></div>
+                            <div class="a-b3"></div>
+                        </div>
+    
+                        <div class="nav-m">
+                            <label for="radio1" class="m-btn"></label>
+                            <label for="radio2" class="m-btn"></label>
+                            <label for="radio3" class="m-btn"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="img-container">
+            <img src="1.png" alt="">
+            <img src="2.png" alt="">
+            <img src="3.png" alt="">
+        </div>
+
+        <div class="software-text">Softwares</div>
+
+        <section class="softwares">
+            <div class="software-container">
+                <div class="cards">
+                    <div class="contents">
+                        <h2>Microsoft Office</h2>
+                        <p>I mean... the vast majority of people should be comfortable in using this software, right?</p>
+                        <h3>Proficiency: 4/5</h3>
+                    </div>
+                    <img src="ms.png" alt="">
+                </div>
+                <div class="cards">
+                    <div class="contents">
+                        <h2>Adobe Photoshop</h2>
+                        <p>I learned to use photoshop a couple of months ago during a training. I'm currently trying to get the grasp on how to use it.</p>
+                        <h3>Proficiency: 1.5/5</h3>
+                    </div>
+                    <img src="ps.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-img">
+                <a href="https://www.linkedin.com/in/richard-sugianto-341ab821b/" target="_blank"><img src="linkedin.png" alt="linkedin"></a></li>
+                <a href="https://www.instagram.com/erikrez08/?hl=en" target="_blank"><img src="instagram.png" alt="instagram"></a></li>
+                <a href="https://www.facebook.com/richard.erik2004/" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
+            </div>
+            <p class="footer-text">&copy Copyright 2022 @Richard Sugianto Laiman all rights reserved.</p>
+        </footer>
+    </body>
+</html>        

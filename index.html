@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Richard Sugianto Laiman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="title.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    </head>
+    <body id="noScroll">
+            <header>
+                <img class="logo"src="logo.png" alt="logo">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="portofolio.html">Portofolio</a></li>
+                        <li><a href="sol.html" target="_blank" class="nav-sol">SolGallery</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="contact.html">Contact</a>
+                <p class="menu bars"><i class="fas fa-bars"></i></p>
+            </header>
+            <div id="mobile__menu" class="overlay">
+                <a class="close">&times;</a>
+                <div class="overlay__content">
+                    <a href="index.html" style="color: rgba(0, 136, 169, 1); font-weight: 700;">Home</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="portofolio.html">Portofolio</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="sol.html" target="_blank">SolGallery</a>
+                </div>
+            </div>
+            <script type="text/javascript" src="mobile.js"></script>
+    
+            <section class="Home" id="blur">
+                <button class="a-right" onclick="show()"><i class="fas fa-chevron-right"></i></button>
+                <div id="a-left">
+                    <button onclick="popup()"><i class="fas fa-calculator"></i></button>
+                    <button onclick="hide()"><i class="fas fa-chevron-left"></i></button>
+                </div>
+
+                <div>
+                    <p id="HomeText">Welcome to my website!</p>
+                    <a class="Below" href="portofolio.html">View my work</a>
+                </div>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+                <span class="Star"></span>
+            </section>
+            
+            <div id="popup">
+                <h2>Calculator</h2>
+                <p>This is a standalone project that maintains the theme of this website. It was created to improve my skills at using Javascript.</p>
+                <a href="./Calculator/index.html" target="_blank">Check it out</a>
+                <button onclick="popup()"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <script>
+                function show() {
+                  var x = document.getElementById("a-left");
+                  if (x.style.visibility === "hidden") {
+                    x.style.visibility = "visible";
+                  } else {
+                    x.style.visibility = "hidden";
+                  }
+                }
+                function hide() {
+                  var x = document.getElementById("a-left");
+                  if (x.style.visibility === "visible") {
+                    x.style.visibility = "hidden";
+                  } else {
+                    x.style.visibility = "visible";
+                  }
+                }
+                function popup() {
+                    var blur = document.getElementById('blur');
+                    blur.classList.toggle('active');
+                    var popup = document.getElementById('popup');
+                    popup.classList.toggle('active');
+                    var blur = document.getElementById('noScroll');
+                    blur.classList.toggle('active');
+                    var x = document.getElementById("popup");
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+        <footer>
+            <div class="footer-img">
+                <a href="https://www.linkedin.com/in/richard-sugianto-341ab821b/" target="_blank"><img src="linkedin.png" alt="linkedin"></a></li>
+                <a href="https://www.instagram.com/erikrez08/?hl=en" target="_blank"><img src="instagram.png" alt="instagram"></a></li>
+                <a href="https://www.facebook.com/richard.erik2004/" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
+            </div>
+            <p class="footer-text">&copy Copyright 2022 @Richard Sugianto Laiman all rights reserved.</p>
+        </footer>
+    </body>
+</html>
